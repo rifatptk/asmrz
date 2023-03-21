@@ -81,7 +81,11 @@ function FileElement({ el, depth }) {
             onClick={() => setisExpanded(!isExpanded)}
             className="flex gap-2 items-center"
           >
-            {isExpanded ? <FaFolderOpen /> : <FaFolder />}{" "}
+            {isExpanded ? (
+              <FaFolderOpen color="#F4B400" />
+            ) : (
+              <FaFolder color="#F4B400" />
+            )}{" "}
             <span>{el.name}</span>
           </div>
           {isExpanded &&
@@ -105,7 +109,7 @@ export default function FileTree() {
     <div className="min-h-screen bg-gray-800 p-10 flex flex-col">
       <h1 className="tracking-widest text-2xl">FILE TREE</h1>
 
-      <div className="p-5 bg-gray-900 rounded mt-5 flex-1">
+      <div className="p-5 bg-gray-900 rounded-lg mt-5 flex-1">
         {files.children.map((el) => (
           <FileElement el={el} depth={0} key={el.id} />
         ))}
