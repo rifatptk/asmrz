@@ -58,13 +58,13 @@ const files = {
 };
 
 const fileIcons = {
-  html: <FaHtml5 />,
-  css: <FaCss3 />,
-  svg: <ImSvg />,
-  jsx: <FaReact />,
-  pdf: <BsFiletypePdf />,
-  js: <SiJavascript />,
-  json: <FaNodeJs />,
+  html: <FaHtml5 color="#DB4437" />,
+  css: <FaCss3 color="#4285F4" />,
+  svg: <ImSvg color="#F4B400" />,
+  jsx: <FaReact color="#4285F4" />,
+  pdf: <BsFiletypePdf color="#DB4437" />,
+  js: <SiJavascript color="#F4B400" />,
+  json: <FaNodeJs color="	#0F9D58" />,
   unknown: <BsFileEarmarkCode />,
 };
 
