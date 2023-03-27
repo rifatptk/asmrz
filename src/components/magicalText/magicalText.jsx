@@ -54,7 +54,7 @@ export default function MagicalText() {
     // }
   }, []);
   return (
-    <div className="bg-gray-900 min-h-screen grid place-items-center">
+    <div className="bg-gray-900 py-20 grid place-items-center">
       <h1 className="text-8xl font-bold ">
         <span className="magic">
           <span className="magic-star">

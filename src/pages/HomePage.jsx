@@ -2,6 +2,7 @@ import React from "react";
 import FileTree from "../components/fileTree";
 import HoverBanner from "../components/HoverBanner";
 import MagicalText from "../components/magicalText/magicalText";
+import RiRating from "../components/RiRating";
 import SidenavTree from "../components/SidenavTree";
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
       <FileTree />
       <MagicalText />
       <SidenavTree />
+      <RiRating />
     </div>
   );
 }
