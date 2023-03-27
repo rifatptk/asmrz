@@ -7,7 +7,15 @@ const links = [
     title: "Dashboard",
     to: "/dashboard",
     children: [
-      { id: "1A", title: "Overview", to: "/overview" },
+      {
+        id: "1A",
+        title: "Overview",
+        to: "/overview",
+        children: [
+          { id: "1A1", title: "Children", to: "/overview" },
+          { id: "1B2", title: "Children", to: "/summary" },
+        ],
+      },
       { id: "1B", title: "Summary", to: "/summary" },
     ],
   },
@@ -75,10 +83,10 @@ function SidenavLink({ link, depth }) {
   );
 }
 
-export default function SidenavTree() {
+export default function Sidenav1() {
   return (
     <div className="bg-gray-800 p-10 flex flex-col gap-5">
-      <h1 className="tracking-widest">SIDENAV TREE</h1>
+      <h1 className="tracking-widest">SIDENAV ONE</h1>
 
       <div className="flex-1 bg-gray-900 rounded-lg flex">
         <aside className="p-2 w-[200px] flex flex-col gap-1">
