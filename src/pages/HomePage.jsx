@@ -5,6 +5,7 @@ import MagicalText from "../components/magicalText/magicalText";
 import RiRating from "../components/RiRating";
 import Sidenav2 from "../components/Sidenav2";
 import Sidenav1 from "../components/Sidenav1";
+import Pagination1 from "../components/Pagination1";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Sidenav1 />
       <Sidenav2 />
       <RiRating />
+      <Pagination1 />
     </div>
   );
 }
