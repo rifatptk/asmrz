@@ -18,6 +18,10 @@ export default function RiDnD() {
     draggedOverItem.current = i;
   }
 
+  function onDragOver(e) {
+    e.preventDefault();
+  }
+
   function handleSort() {
     // copy last state of the items
     let _fruits = [...fruits];
@@ -42,6 +46,7 @@ export default function RiDnD() {
             onDragStart={(e) => onDragStart(e, i)}
             onDragEnter={(e) => onDragEnter(e, i)}
             onDragEnd={handleSort}
+            onDragOver={onDragOver}
             className="p-4 bg-gray-700 hover:bg-gray-600 rounded-md flex items-center gap-2 cursor-move"
             key={i}
           >
